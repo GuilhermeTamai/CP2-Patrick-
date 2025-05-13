@@ -30,7 +30,7 @@ void fibonacci(){
 
 void fatoriais() {
   int numero;
-  printf("Digite um numero entre 1 e 20.\n");
+  printf("Digite um numero entre 1 e 20:\n");
   scanf("%d", &numero);
 
   if (numero < 1 || numero > 20) {
