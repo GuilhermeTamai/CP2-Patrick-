@@ -1,19 +1,19 @@
 // Integrantes do grupo: Caio Carminato Castelão Rm563630, Guilherme Vasques Tamai Rm563276 e Vitor Komura de Freitas Rm563694
-#include <studio.h>
+#include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 
 void fibonacci(){
   int quantidade;
-  printd("Informe a quantidade de termos da sequencia de Finonacci (1 a 50): ");
+  printf("Informe a quantidade de termos da sequencia de Fibonacci (1 a 50): ");
   scanf("%d" , &quantidade);
 
-  if(quantidade < 1 quantidade > 50) {
-    printf("Numero invalidado. Deve estar entre 1 e 50.\n");
+  if(quantidade < 1 || quantidade > 50) {
+    printf("Numero invalido. Deve estar entre 1 e 50.\n");
     return;
   }
 
-  long long serie{50};
+  long long serie[50];
   serie[0] = 0;
   if (quantidade >= 2) serie[1] = 1;
 
@@ -22,7 +22,7 @@ void fibonacci(){
   }
 
   printf("Sequencia gerada: ");
-  for (int = 0; i < quantidade; i++) {
+  for (int i = 0; i < quantidade; i++) {
     printf("%lld", serie[i]);
   }
   printf("\n");
@@ -34,7 +34,7 @@ void fatoriais() {
   scanf("%d", &numero);
 
   if (numero < 1 numero > 20) {
-      printf("Valor invalidado. Deve estar no intervalo de 1 a 20.\n");
+      printf("Valor invalido. Deve estar no intervalo de 1 a 20.\n");
       return;
   }
 
@@ -68,16 +68,16 @@ void palindromo() {
   if (verifica_palindromo) {
     printf("A palavra digitada e um palindromo.\n");
   } else {
-    printf("A palavra digitada NAO e um palindromo\n");
+    printf("A palavra digitada NAO e um palindromo.\n");
   }
 }
 
 void substring() {
   char texto1[101], texto2[101];
   printf("Digite a primeira string: ");
-  scanf("%s", texto1);
+  scanf("%s",texto1);
   printf("Digite a segunda string: ");
-  scanf("%s", texto 2);
+  scanf("%s",texto 2);
 
   int achou = 0;
   int tamanho1 = strlen(texto1);
@@ -90,7 +90,7 @@ void substring() {
         break;
       }
     }
-    if (j == tamanhow) {
+    if (j == tamanho2) {
       achou = 1;
       break;
     }
