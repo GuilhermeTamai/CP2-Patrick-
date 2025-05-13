@@ -36,16 +36,71 @@ void fatoriais() {
   if (numero < 1 numero > 20) {
       printf("Valor invalidado. Deve estar no intervalo de 1 a 20.\n");
       return;
-{
+  }
 
-long long fatoriais[20];
-fatoriais[0] = 1;
+  long long fatoriais[20];
+  fatoriais[0] = 1;
 
-for (int i = 1; i < numero; i++) {
-  fatoriais[i] = fatoriais[i-1] * (i+1);
+  for (int i = 1; i < numero; i++) {
+    fatoriais[i] = fatoriais[i-1] * (i+1);
+  }
+  printf("Lista de fatoriais:\n");
+  for (int i = 0; i < numero; i++) {
+    printf("%d! = %lld\n" , i+1, fatoriais[i]);
+  }
 }
 
-printf("Lista de fatoriais:\n");
-for (int i = 0; i < numero; i++) {
-  printf("%d! = %lld\n" , i+1, fatoriais[i]);
+void palindromo() {
+  char texto[101];
+  printf("Digite uma palavra para verificar se e palindromo: ");
+  scanf("%s", texto);
+
+  int tamanho = strlen(texto);
+  bool verifica_palindromo = true;
+
+  for (int i = 0; i < tamanho/2; i++) {
+    if (texto[i] != texto [tamanho-1-i]) {
+      verifica_palindromo = false;
+      break;
+  }
 }
+
+  if (verifica_palindromo) {
+    printf("A palavra digitada e um palindromo.\n");
+  } else {
+    printf("A palavra digitada NAO e um palindromo\n");
+  }
+}
+
+void substring() {
+  char texto1[101], texto2[101];
+  printf("Digite a primeira string: ");
+  scanf("%s", texto1);
+  printf("Digite a segunda string: ");
+  scanf("%s", texto 2);
+
+  int achou = 0;
+  int tamanho1 = strlen(texto1);
+  int tamanho2 = strlen(texto2);
+
+  for (int i = 0; i <= tamanho1 - tamanho2; i++) {
+    int j;
+    for (j = 0; j < tamanho2; j++) {
+      if (texto1[i + j] != texto2[j]) {
+        break;
+      }
+    }
+    if (j == tamanhow) {
+      achou = 1;
+      break;
+    }
+  }
+
+  if (achou) {
+    printf("A segunda string esta presente na primeira.\n");
+  } else {
+    printf("A segunda string NAO esta presente na primeira.\n");
+  }
+}
+
+
