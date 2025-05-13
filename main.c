@@ -23,7 +23,7 @@ void fibonacci(){
 
   printf("Sequencia gerada: ");
   for (int i = 0; i < quantidade; i++) {
-    printf("%lld", serie[i]);
+    printf("%lld ", serie[i]);
   }
   printf("\n");
 }
@@ -33,7 +33,7 @@ void fatoriais() {
   printf("Digite um numero entre 1 e 20.\n");
   scanf("%d", &numero);
 
-  if (numero < 1 numero > 20) {
+  if (numero < 1 || numero > 20) {
       printf("Valor invalido. Deve estar no intervalo de 1 a 20.\n");
       return;
   }
@@ -59,7 +59,7 @@ void palindromo() {
   bool verifica_palindromo = true;
 
   for (int i = 0; i < tamanho/2; i++) {
-    if (texto[i] != texto [tamanho-1-i]) {
+    if (texto[i] != texto[tamanho-1-i]) {
       verifica_palindromo = false;
       break;
   }
@@ -75,9 +75,9 @@ void palindromo() {
 void substring() {
   char texto1[101], texto2[101];
   printf("Digite a primeira string: ");
-  scanf("%s",texto1);
+  scanf("%s", texto1);
   printf("Digite a segunda string: ");
-  scanf("%s",texto 2);
+  scanf("%s", texto 2);
 
   int achou = 0;
   int tamanho1 = strlen(texto1);
