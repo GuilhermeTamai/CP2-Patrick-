@@ -62,8 +62,8 @@ void palindromo() {
     if (texto[i] != texto[tamanho-1-i]) {
       verifica_palindromo = false;
       break;
+    }
   }
-}
 
   if (verifica_palindromo) {
     printf("A palavra digitada e um palindromo.\n");
