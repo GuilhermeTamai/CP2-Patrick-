@@ -77,7 +77,7 @@ void substring() {
   printf("Digite a primeira string: ");
   scanf("%s", texto1);
   printf("Digite a segunda string: ");
-  scanf("%s", texto 2);
+  scanf("%s", texto2);
 
   int achou = 0;
   int tamanho1 = strlen(texto1);
