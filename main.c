@@ -103,4 +103,34 @@ void substring() {
   }
 }
 
+int main() {
+  int escolha;
 
+  printf("MENU\n");
+  printf("1- Fibonacci\n");
+  printf("2- Fatorials\n");
+  printf("3- Palindromo\n");
+  printf("4- Substring\n");
+  printf("Escolha: ");
+  scanf("%d", &ecolha);
+
+  switch(escolha){
+     case 1:
+        fibonacci();
+        break;
+     case 2:
+        fatoriais();
+        break;
+     case 3:
+        palindromo();
+        break;
+     case 4:
+        substring();
+        break;
+     default:
+        printf("Opçao invalida!\n");
+  }
+
+  return 0;
+}
+  
