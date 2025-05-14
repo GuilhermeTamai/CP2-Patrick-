@@ -108,11 +108,11 @@ int main() {
 
   printf("MENU\n");
   printf("1- Fibonacci\n");
-  printf("2- Fatorials\n");
+  printf("2- Fatoriais\n");
   printf("3- Palindromo\n");
   printf("4- Substring\n");
   printf("Escolha: ");
-  scanf("%d", &ecolha);
+  scanf("%d", &escolha);
 
   switch(escolha){
      case 1:
@@ -128,7 +128,7 @@ int main() {
         substring();
         break;
      default:
-        printf("Opçao invalida!\n");
+        printf("Opcao invalida!\n");
   }
 
   return 0;
